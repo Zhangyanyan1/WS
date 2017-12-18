@@ -1,37 +1,306 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Zhangyanyan1/WS/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Zhangyanyan1/WS/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+         <div class="center">
+              <div class="sousuo">
+                   <form action="index.html">
+                       <input type="text" placeholder="搜索其实很简单"/><input type="submit" value="搜索"/>
+                   </form>
+              </div>
+              <div id="logo">
+                   <p><a href="index.html"><img src="img/logo.png" alt="集团首页"></a> </p>
+              </div>
+         </div>
+    </header>
+    <div class="nav">
+         <div class="center">
+              <ul>
+                  <li class="szym"><a href="index.html">集团首页</a></li>
+                  <li><a href="piclist.html">产品列表</a></li>
+                  <li><a href="list.html">新闻列表</a></li>
+                  <li><a href="content.html">内容页面</a></li>
+                  <li><a href="index.html">关于我们</a></li>
+              </ul>
+         </div>
+    </div>
+    <div class="wrapper">
+        <div class="center">
+            <article>
+                 <section class="lunbotu">
+                     <div class="wrap">
+                         <div id="slide-holder">
+                             <div id="slide-runner">
+                                 <a href="/"><img id="slide-img-1" src="img/a1.jpg" class="slide" alt="" /></a>
+                                 <a href="/"><img id="slide-img-2" src="img/a2.jpg" class="slide" alt="" /></a>
+                                 <a href="/"><img id="slide-img-3" src="img/a3.jpg" class="slide" alt="" /></a>
+                                 <a href="/"><img id="slide-img-4" src="img/a4.jpg" class="slide" alt="" /></a>
+                                 <a href="/"><img id="slide-img-5" src="img/a5.jpg" class="slide" alt="" /></a>
+                                 <a href="/"><img id="slide-img-6" src="img/a6.jpg" class="slide" alt="" /></a>
+                                 <a href="/"><img id="slide-img-7" src="img/a4.jpg" class="slide" alt="" /></a>
+                                 <div id="slide-controls">
+                                     <p id="slide-client" class="text"><strong>联盟推荐: </strong><span></span></p>
+                                     <p id="slide-desc" class="text"></p>
+                                     <p id="slide-nav"></p>
+                                 </div>
+                             </div>
+                         </div>
+                         <script type="text/javascript">
+                             if(!window.slider)
+                                 var slider={};
+                             slider.data=[{
+                                 "id":"slide-img-1"
+                                 ,"client":"第一条的标题在这里"
+                                 ,"desc":"第一条的这里是描述信息"
+                             },{
+                                 "id":"slide-img-2"
+                                 ,"client":"标题在这里"
+                                 ,"desc":"这里是描述信息"
+                             },{
+                                 "id":"slide-img-3"
+                                 ,"client":"标题在这里"
+                                 ,"desc":"这里是描述信息"
+                             },{
+                                 "id":"slide-img-4"
+                                 ,"client":"标题在这里"
+                                 ,"desc":"这里是描述信息"
+                             },{
+                                 "id":"slide-img-5"
+                                 ,"client":"标题在这里"
+                                 ,"desc":"这里是描述信息"
+                             },{
+                                 "id":"slide-img-6"
+                                 ,"client":"标题在这里"
+                                 ,"desc":"这里是描述信息"
+                             },{
+                                 "id":"slide-img-7"
+                                 ,"client":"标题在这里"
+                                 ,"desc":"这里是描述信息"
+                             }];
+                         </script>
+                     </div>
+                 </section>
+                 <section class="xinwen">
+                     <div class="title_bg">
+                         <h4><a href="list.html">集团会员新闻</a></h4>
+                     </div>
+                     <ul>
+                         <li>
+                             <a href="content.html">
+                                 <img src="img/news_11.jpg" alt="新闻简介">
+                             </a>
+                             <a href="content.html" class="ms">
+                             <div class="sanjiaoxing">
+                                 <h3>这里是很长很长的新闻标题</h3>
+                                 <p>北京地铁7号线,是北京地铁第18条开通运营的线路,由北京市地铁运营有限公司运营一分公司负责运营。该线西起北京西站,东至焦化厂站,沿线经过丰台、西城、东城、朝阳4.</p>
+                             </div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="content.html">
+                                 <img src="img/news_11.jpg" alt="新闻简介">
+                             </a>
+                             <a href="content.html" class="ms">
+                             <div class="sanjiaoxing">
+                                 <h3>这里是很长很长的新闻标题</h3>
+                                 <p>北京地铁7号线,是北京地铁第18条开通运营的线路,由北京市地铁运营有限公司运营一分公司负责运营。该线西起北京西站,东至焦化厂站,沿线经过丰台、西城、东城、朝阳4.</p>
+                             </div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="content.html">
+                                 <img src="img/news_11.jpg" alt="新闻简介">
+                             </a>
+                             <a href="content.html" class="ms">
+                             <div class="sanjiaoxing">
+                                 <h3>这里是很长很长的新闻标题</h3>
+                                 <p>北京地铁7号线,是北京地铁第18条开通运营的线路,由北京市地铁运营有限公司运营一分公司负责运营。该线西起北京西站,东至焦化厂站,沿线经过丰台、西城、东城、朝阳4.</p>
+                             </div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="content.html">
+                                 <img src="img/news_10.jpg" alt="新闻简介">
+                             </a>
+                             <a href="content.html" class="ms">
+                             <div class="sanjiaoxing">
+                                 <h3>这里是很长很长的新闻标题</h3>
+                                 <p>北京地铁7号线,是北京地铁第18条开通运营的线路,由北京市地铁运营有限公司运营一分公司负责运营。该线西起北京西站,东至焦化厂站,沿线经过丰台、西城、东城、朝阳4.</p>
+                             </div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="content.html">
+                                 <img src="img/news_10.jpg" alt="新闻简介">
+                             </a>
+                             <a href="content.html" class="ms">
+                             <div class="sanjiaoxing">
+                                 <h3>这里是很长很长的新闻标题</h3>
+                                 <p>北京地铁7号线,是北京地铁第18条开通运营的线路,由北京市地铁运营有限公司运营一分公司负责运营。该线西起北京西站,东至焦化厂站,沿线经过丰台、西城、东城、朝阳4.</p>
+                             </div>
+                             </a>
+                         </li>
+                     </ul>
+                 </section>
+                 <section class="huodong">
+                     <div class="title_bg">
+                         <h4><a href="list.html">集团活动</a></h4>
+                     </div>
+                     <section class="huodong_a">
+                         <ul>
+                             <li><a href="content.html"><img src="img/hd_1.jpg"></a></li>
+                             <li><a href="content.html"><img src="img/hd2.jpg"></a></li>
+                             <li><a href="content.html"><img src="img/hd3.jpg"></a></li>
+                             <li><a href="content.html"><img src="img/hd2.jpg"></a></li>
+                         </ul>
+                     </section>
+                     <section class="huodong_b">
+                         <ul>
+                             <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                             <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                             <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                             <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                             <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                             <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                             <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                             <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                             <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                             <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                         </ul>
+                     </section><section class="huodong_c">
+                         <ul>
+                             <li><a href="content.html"><img src="img/hd_17.jpg"> </a> </li>
+                             <li><a href="content.html"><img src="img/hdd_20.jpg"> </a> </li>
+                         </ul>
+                     </section>
+                 </section>
+            </article>
+            <aside>
+                 <section class="bowen">
+                     <div class="title_bg">
+                         <h4><a href="list.html">精彩博文</a></h4>
+                     </div>
+                     <ul>
+                         <li><a href="content.html"><img src="img/bowen_06.jpg"/></a></li>
+                         <li class="b2"><a href="content.html"><img src="img/bowen_06.jpg"/></a></li>
+                     </ul>
+                     <ul>
+                         <li><p>精彩博文详细标题</p></li>
+                         <li><p>精彩博文详细标题</p></li>
+                     </ul>
+                     <ul class="ul">
+                         <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                         <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                         <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                     </ul>
+                 </section>
+                <section class="zhaoping">
+                    <div class="title_bg">
+                        <h4><a href="list.html">职业信息</a></h4>
+                    </div>
+                    <ul class="ul ull">
+                        <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                        <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                        <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                        <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                        <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                        <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                        <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                        <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                        <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                        <li><a href="content.html">新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长新闻标题会很长很长很长</a></li>
+                    </ul>
+                </section>
+                <section class="lianxi">
+                    <div class="title_bg">
+                        <h4><a href="list.html">联系我们</a></h4>
+                    </div>
+                    <a href="content.html"><img src="img/about_13.jpg"></a>
+                </section>
+                <section class="zigongsi">
+                    <div class="title_bg">
+                        <h4><a href="list.html">集团子公司</a></h4>
+                    </div>
+                    <ul>
+                        <li>
+                            <h4><a href="content.html">子公司名称</a></h4>
+                            <div class="zgsjj">
+                                <a href="content.html"><img src="img/menber_19.jpg"></a>
+                                <a href="content.html">从2月6日赴俄罗斯出席索契冬奥会开幕式，到11月23日结束南太平洋之行，习近平主席2014年7次出访，足迹遍及18个国家。谈外</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h4><a href="content.html">子公司名称</a></h4>
+                            <div class="zgsjj">
+                                <a href="content.html"><img src="img/menber_19.jpg"></a>
+                                <a href="content.html">从2月6日赴俄罗斯出席索契冬奥会开幕式，到11月23日结束南太平洋之行，习近平主席2014年7次出访，足迹遍及18个国家。谈外</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h4><a href="content.html">子公司名称</a></h4>
+                            <div class="zgsjj">
+                                <a href="content.html"><img src="img/menber_19.jpg"></a>
+                                <a href="content.html">从2月6日赴俄罗斯出席索契冬奥会开幕式，到11月23日结束南太平洋之行，习近平主席2014年7次出访，足迹遍及18个国家。谈外</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h4><a href="content.html">子公司名称</a></h4>
+                            <div class="zgsjj">
+                                <a href="content.html"><img src="img/menber_19.jpg"></a>
+                                <a href="content.html">从2月6日赴俄罗斯出席索契冬奥会开幕式，到11月23日结束南太平洋之行，习近平主席2014年7次出访，足迹遍及18个国家。谈外</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h4><a href="content.html">子公司名称</a></h4>
+                            <div class="zgsjj">
+                                <a href="content.html"><img src="img/menber_19.jpg"></a>
+                                <a href="content.html">从2月6日赴俄罗斯出席索契冬奥会开幕式，到11月23日结束南太平洋之行，习近平主席2014年7次出访，足迹遍及18个国家。谈外</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h4><a href="content.html">子公司名称</a></h4>
+                            <div class="zgsjj">
+                                <a href="content.html"><img src="img/menber_19.jpg"></a>
+                                <a href="content.html">从2月6日赴俄罗斯出席索契冬奥会开幕式，到11月23日结束南太平洋之行，习近平主席2014年7次出访，足迹遍及18个国家。谈外</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h4><a href="content.html">子公司名称</a></h4>
+                            <div class="zgsjj">
+                                <a href="content.html"><img src="img/menber_19.jpg"></a>
+                                <a href="content.html">从2月6日赴俄罗斯出席索契冬奥会开幕式，到11月23日结束南太平洋之行，习近平主席2014年7次出访，足迹遍及18个国家。谈外</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h4><a href="content.html">子公司名称</a></h4>
+                            <div class="zgsjj">
+                                <a href="content.html"><img src="img/menber_19.jpg"></a>
+                                <a href="content.html">从2月6日赴俄罗斯出席索契冬奥会开幕式，到11月23日结束南太平洋之行，习近平主席2014年7次出访，足迹遍及18个国家。谈外</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="center">
+            <footer class="container">
+                <ul>
+                    <li><a href="content.html">版权信息</a></li>
+                    <li><a href="content.html">站点地图</a></li>
+                    <li><a href="content.html">联系我们</a></li>
+                </ul>
+                <p>©2017chengcai.com 京ICP证09988991号</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
