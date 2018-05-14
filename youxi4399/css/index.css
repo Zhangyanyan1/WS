@@ -1,1 +1,384 @@
-# WS
+
+/*进入电脑或下载*/
+header{
+    /*background: url(../img/topbg.jpg) no-repeat -470px -60px;*/
+    background: url(../img/topbg.jpg) no-repeat -275px -60px;
+    background-size: 1900px;
+}
+.header_img{
+    background: url(../img/bg_1.png) no-repeat;
+    background-size: 970px;
+}
+.header_img img{
+    margin: 20px 13px;
+    width: 944px;
+}
+
+
+/*开心消消乐的问答*/
+#beijingliangbian{
+    background: url(../img/con_bg.png) no-repeat -275px 0;
+    background-size: 1900px;
+}
+/*开心消消乐的提示语*/
+.tishi{
+    width: 100%;
+    height: 108px;
+    background: url(../img/bg_2.png) no-repeat;
+    background-size: 970px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.tishi .wenzi{
+    width: 800px;
+    height: 50px;
+}
+.tishi .wenzi a{
+    font-size: 13px;
+    line-height: 25px;
+    height: 25px;
+    color: #eefaa2;
+}
+.tishi .wenzi p{
+    text-indent: 30px;;
+}
+
+
+/*开心消消乐问题背景*/
+.wenti1{
+    width: 100%;
+    height: 272px;
+    background: url(../img/bg_3.png) no-repeat;
+    background-size: 970px;
+    position: relative;
+}
+.wenti2{
+    width: 100%;
+    height: 279px;
+    background: url(../img/bg_4.png) no-repeat;
+    background-size: 970px;
+    position: relative;
+}
+
+
+/*开心消消乐跳转到问题的详情界面*/
+.wenti_tiaozhuan{
+    width: 421px;
+    height: 28px;
+    top: 25px;
+    left: 28px;
+    position: absolute;
+    overflow: hidden;
+}
+.wenti_tiaozhuan_li1 a p{
+    width: 132px;
+    height: 28px;
+}
+.wenti_tiaozhuan_li2 a p{
+    margin-top: 4px;
+    width: 48px;
+    height: 18px;
+    border-radius: 7px;
+}
+.tiaozhuan2{
+    left: 519px;
+}
+.tiaozhuan3{
+    top: 35px;
+    left: 28px;
+}
+.tiaozhuan4{
+    top: 35px;
+    left: 519px;
+}
+.neirong{
+    top: 70px;
+    width: 421px;
+    position: absolute;
+}
+/*新闻资讯  和  游戏问答 的左边距*/
+.lBaiye{
+	left: 28px;
+}
+/*游戏攻略  和 新手指南 的左边距*/
+.rBaiye{
+	left: 519px;
+}
+/*游戏问答 和 新手指南 的上边距*/
+.topB{
+	top: 80px;
+}
+
+.baiye{
+    list-style: none;
+    width: 421px;
+}
+.baiye li{
+    width: 100%;
+    height: 27px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #bdef9b;
+}
+.baiye li div{
+    width: 100%;
+    position: absolute;
+    top: -27px;
+}
+.baiye3 li div,.baiye4 li div{
+    top: 0;
+}
+.baiye li div a{
+    width: 100%;
+    color: #1f5c16;
+    font-size: 13px;
+}
+.baiye li div p{
+    width: 100%;
+    line-height: 27px;
+    position: relative;
+}
+.baiye li div samp{
+    line-height: 27px;
+}
+.spanR{
+    position: absolute;
+    right: 0;
+}
+
+
+/*开心消消乐展示*/
+aside .aside_img{
+    width: 100%;
+    height: 520px;
+    background: url(../img/cccbb.png) no-repeat;
+    background-size: 970px;
+    position: relative;
+    overflow: hidden;
+}
+aside .aside_img .ccc{
+    top: 12px;
+    width: 968px;
+    height: 500px;
+    border: 1px solid #0e7004;
+    position: absolute;
+    border-radius: 10px;
+}
+aside .aside_img .ccc .bk{
+    width: 966px;
+    height: 498px;
+    border: 1px solid #cdea3b;
+    background-color: #96c519;
+    border-radius: 10px;
+}
+aside .aside_img .ccc .bk .aside_nr{
+    width: 950px;
+    height: 480px;
+    margin: 8px;
+    border: 1px solid #26a914;
+    background-color: #ddffd6;
+    border-radius: 10px;
+}
+.aside_lb{
+    width: 950px;
+    overflow: hidden;
+}
+
+
+/*轮播图*/
+.aside_nr .section_l{
+    width: 60%;
+}
+.section_l .lunbotu{
+    width: 520px;
+    height: 231px;
+    margin-left: 20px;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #bbc4be;
+}
+.img_group{
+    width: 4160px;
+}
+.img_group img{
+    width: 520px;
+    height: 231px;
+    float: left;
+}
+.ctrl_button{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -80px;
+}
+.ctrl_button li{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    float: left;
+    border-radius: 50%;
+    border: solid 1px #45662b;
+    background: rgba(128, 123, 114, 0.8);
+}
+.ctrl_button .current{
+    border: solid 1px #8e9e8a;
+    background: rgb(204, 195, 184);
+}
+
+
+/*小动物的个性主题*/
+.aside_nr .section_r{
+    width: 39%;
+}
+.biaoti_yincang{
+    margin-top: 15px;
+    width: 350px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #ccc;
+    border-top: 1px solid #9c9c9c;
+}
+.biaoti_yincang h4{
+    margin-left: 10px;
+}
+
+.neirong_yincang{
+    margin-top: 20px;
+    width: 350px;
+    height: 150px;
+    border: 1px solid #d7d3c6;
+    overflow: hidden;
+    background: url(../img/sc_btn.png)no-repeat 225px 60px;
+    background-size: 100px;
+}
+.yincang{
+    width: 500px;
+    height: 150px;
+    overflow: hidden;
+    background-color: rgba(191, 255, 151, 0.5);
+}
+.yincang li{
+    float: left;
+    background-color: #ffffff;
+    border-right: 1px solid #d7d3c6;
+}
+.yincang p{
+    width: 49px;
+    height: 130px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.yincang .haitun p{
+    float: right;
+    background: url(../img2/haitun1.jpg)no-repeat 7px 75px;
+    background-size: 40px;
+}
+.yincang .xiaoji p{
+    float: right;
+    background: url(../img2/ji1.jpg)no-repeat 3px 73px;
+    background-size: 45px;
+}
+.yincang .qingwa p{
+    float: right;
+    background: url(../img2/qingwa1.jpg)no-repeat 3px 73px;
+    background-size: 45px;
+}
+.yincang .laoying p{
+    float: left;
+    background: url(../img2/ying1.jpg)no-repeat 5px 80px;
+    background-size: 40px;
+}
+.haitun{
+    overflow: hidden;
+}
+.yincang li img{
+    width: 0px;
+    height: 150px;
+    -webkit-transition: width 0.4s linear;
+    -moz-transition: width 0.4s linear;
+    -ms-transition: width 0.4s linear;
+    -o-transition: width 0.4s linear;
+    transition: width 0.4s linear;
+}
+.yincang li:hover img{
+    width: 150px;
+}
+
+
+/*小动物*/
+.section_dw{
+    overflow: hidden;
+    margin-left: 5px;
+}
+.aside_dw .section_dw_ul li{
+    float: left;
+    margin: 29px 13px;
+    width: 130px;
+    height: 130px;
+    background-color: #ffffff;
+}
+.aside_dw .section_dw_ul li p{
+    border: 1px solid #d6e3de;
+    width: 130px;
+    height: 130px;
+}
+.li1{
+    background: url(../img2/haitun1.jpg) no-repeat 12px 10px;
+    background-size: 110px;
+}
+.li2{
+    background: url(../img2/ji1.jpg) no-repeat;
+    background-size: 130px;
+}
+.li3{
+    background: url(../img2/qingwa1.jpg) no-repeat 0 -5px;
+    background-size: 130px;
+}
+.li4{
+    background: url(../img2/ying1.jpg) no-repeat 10px 16px;
+    background-size: 110px;
+}
+.li5{
+    background: url(../img2/quanji.jpg) no-repeat -160px -5px;
+    background-size: 470px;
+}
+.li6{
+    background: url(../img2/xiong1.jpg) no-repeat 8px 10px;
+    background-size: 115px;
+}
+.aside_dw .li1:hover{
+    background: url(../img2/haitun2.jpg) no-repeat;
+    background-size: 130px;
+}
+.aside_dw .li2:hover{
+    background: url(../img2/ji4.jpg) no-repeat;
+    background-size: 130px;
+}
+.aside_dw .li3:hover{
+    background: url(../img2/qingwa2.jpg) no-repeat;
+    background-size: 130px;
+}
+.aside_dw .li4:hover{
+    background: url(../img2/ying2.jpg) no-repeat;
+    background-size: 130px;
+}
+.aside_dw .li5:hover{
+    background: url(../img2/huli2.jpg) no-repeat;
+    background-size: 130px;
+}
+.section_wz{
+    overflow: hidden;
+    margin-left: 5px;
+}
+.aside_dw .section_wz_ul li{
+    float: left;
+    margin: 0 13px;
+    width: 130px;
+}
+.aside_dw .section_wz_ul li h4{
+    width: 130px;
+    text-align: center;
+}
+
