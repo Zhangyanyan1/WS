@@ -1,1 +1,329 @@
-# WS
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 970px;
+    background-color: #caffed;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.conter{
+    width: 970px;
+    margin: 0 auto;
+}
+.float_l{
+    float: left;
+}
+.float_r{
+    float: right;
+}
+
+/*游戏的导航栏*/
+nav{
+    background-color: #fff;
+}
+.nav_float{
+    width: 100%;
+    margin: 0 auto;
+    height: 30px;
+    position: relative;
+}
+.nav_img1{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+}
+.nav_img2{
+    top: 0;
+    left: 837px;
+    width: 133px;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+}
+.nav_img1 img,.nav_img1 img{
+    width: 150px;
+    height: 30px;
+}
+.nav_left{
+    top: 0;
+    left: 150px;
+    width: 687px;
+    height: 30px;
+    position: absolute;
+}
+
+nav .yemian{
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    border-right: 1px solid #eee;
+    position: absolute;
+}
+nav .nav_left>div:last-child{
+    border-right: none;
+}
+.y1{
+    top: 0px;
+    left: 86px;
+}
+.y2{
+    top: 0px;
+    left: 172px;
+}
+.y3{
+    top: 0px;
+    left: 258px;
+}
+.y4{
+    top: 0px;
+    left: 344px;
+}
+.y5{
+    top: 0px;
+    left: 430px;
+}
+.y6{
+    top: 0px;
+    left: 516px;
+}
+.y7{
+    top: 0px;
+    left: 602px;
+}
+nav .yemian a{
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+}
+nav .yemian:hover>a{
+    color: #22aaff;
+}
+nav a samp{
+    width: 85px;
+    height: 30px;
+}
+nav a .play{
+    top: 12px;
+    left: 60px;
+    width:0px;
+    height:0px;
+    border-top:6px solid #666;
+    border-left:6px solid rgba(255,255,255,0);
+    border-right:6px solid rgba(255,255,255,0);
+    position: absolute;
+}
+nav .yemian:hover .play{
+    border-top:6px solid #22aaff;
+}
+.nav_sub_xla li a{
+    width: 100%;
+    height: 39px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    line-height: 39px;
+    font-size: 13px;
+}
+.nav_sub_xla .tx1{
+    display: block;
+    width: 0;
+    height: 0;
+    margin: auto;
+    position: absolute;
+    -webkit-transform:scale(0) ;
+    -moz-transform:scale(0);
+    -ms-transform:scale(0);
+    -o-transform:scale(0);
+    transform:scale(0);
+    -webkit-transition: all 0.3s ease 0.1s;
+    -moz-transition: all 0.3s ease 0.1s;
+    -ms-transition: all 0.3s ease 0.1s;
+    -o-transition: all 0.3s ease 0.1s;
+    transition: all 0.3s ease 0.1s;
+    background: rgba(255, 255, 255, 0.8);
+}
+.nav_sub_xla .tx2{
+    width: 0;
+    height: 0px;
+    margin: auto;
+    -webkit-transform: scale(0) rotateX(360deg);
+    -moz-transform: scale(0) rotateX(360deg);
+    -ms-transform: scale(0) rotateX(360deg);
+    -o-transform: scale(0) rotateX(360deg);
+    transform: scale(0) rotateY(360deg);
+    -webkit-transition: all 0.3s ease 0.2s;
+    -moz-transition: all 0.3s ease 0.2s;
+    -ms-transition: all 0.3s ease 0.2s;
+    -o-transition: all 0.3s ease 0.2s;
+    transition: all 0.3s ease 0.2s;
+    background: rgba(255, 255, 255, 0.6);
+}
+.nav_sub_xla .tx3{
+    width: 0;
+    height: 0px;
+    margin: auto;
+    -webkit-transform: scale(0) rotateX(360deg);
+    -moz-transform: scale(0) rotateX(360deg);
+    -ms-transform: scale(0) rotateX(360deg);
+    -o-transform: scale(0) rotateX(360deg);
+    transform: scale(0) rotateY(360deg);
+    -webkit-transition: all 0.3s ease 0.3s;
+    -moz-transition: all 0.3s ease 0.3s;
+    -ms-transition: all 0.3s ease 0.3s;
+    -o-transition: all 0.3s ease 0.3s;
+    transition: all 0.3s ease 0.3s;
+    background: rgba(255, 255, 255, 0.6);
+}
+.nav_sub_xla .tx4{
+    width: 0;
+    height: 0px;
+    margin: auto;
+    -webkit-transform: scale(0) rotateX(360deg);
+    -moz-transform: scale(0) rotateX(360deg);
+    -ms-transform: scale(0) rotateX(360deg);
+    -o-transform: scale(0) rotateX(360deg);
+    transform: scale(0) rotateY(360deg);
+    -webkit-transition: all 0.3s ease 0.4s;
+    -moz-transition: all 0.3s ease 0.4s;
+    -ms-transition: all 0.3s ease 0.4s;
+    -o-transition: all 0.3s ease 0.4s;
+    transition: all 0.3s ease 0.4s;
+    background: rgba(255, 255, 255, 0.6);
+}
+.nav_sub_xla .tx5{
+    width: 0;
+    height: 0px;
+    margin: auto;
+    -webkit-transform: scale(0) rotateX(360deg);
+    -moz-transform: scale(0) rotateX(360deg);
+    -ms-transform: scale(0) rotateX(360deg);
+    -o-transform: scale(0) rotateX(360deg);
+    transform: scale(0) rotateY(360deg);
+    -webkit-transition: all 0.3s ease 0.5s;
+    -moz-transition: all 0.3s ease 0.5s;
+    -ms-transition: all 0.3s ease 0.5s;
+    -o-transition: all 0.3s ease 0.5s;
+    transition: all 0.3s ease 0.5s;
+    background: rgba(255, 255, 255, 0.6);
+}
+.nav_sub_xla .tx6{
+    width: 0;
+    height: 0px;
+    margin: auto;
+    -webkit-transform: scale(0) rotateX(360deg);
+    -moz-transform: scale(0) rotateX(360deg);
+    -ms-transform: scale(0) rotateX(360deg);
+    -o-transform: scale(0) rotateX(360deg);
+    transform: scale(0) rotateY(360deg);
+    -webkit-transition: all 0.3s ease 0.6s;
+    -moz-transition: all 0.3s ease 0.6s;
+    -ms-transition: all 0.3s ease 0.6s;
+    -o-transition: all 0.3s ease 0.6s;
+    transition: all 0.3s ease 0.6s;
+    background: rgba(255, 255, 255, 0.6);
+}
+.nav_sub_xla .tx7{
+    width: 0;
+    height: 0px;
+    margin: auto;
+    -webkit-transform: scale(0) rotateX(360deg);
+    -moz-transform: scale(0) rotateX(360deg);
+    -ms-transform: scale(0) rotateX(360deg);
+    -o-transform: scale(0) rotateX(360deg);
+    transform: scale(0) rotateY(360deg);
+    -webkit-transition: all 0.3s ease 0.7s;
+    -moz-transition: all 0.3s ease 0.7s;
+    -ms-transition: all 0.3s ease 0.7s;
+    -o-transition: all 0.3s ease 0.7s;
+    transition: all 0.3s ease 0.7s;
+    background: rgba(255, 255, 255, 0.6);
+}
+.nav_sub_xla .tx8{
+    width: 0;
+    height: 0px;
+    margin: auto;
+    -webkit-transform: scale(0) rotateX(360deg);
+    -moz-transform: scale(0) rotateX(360deg);
+    -ms-transform: scale(0) rotateX(360deg);
+    -o-transform: scale(0) rotateX(360deg);
+    transform: scale(0) rotateY(360deg);
+    -webkit-transition: all 0.3s ease 0.7s;
+    -moz-transition: all 0.3s ease 0.7s;
+    -ms-transition: all 0.3s ease 0.7s;
+    -o-transition: all 0.3s ease 0.7s;
+    transition: all 0.3s ease 0.7s;
+    background: rgba(255, 255, 255, 0.6);
+}
+nav .yemian:hover .nav_sub_xla {
+    height: auto;
+}
+nav .yemian:hover .nav_sub_xla li{
+    width: 100%;
+    height: 39px;
+    -webkit-transform: scale(1) rotateY(0deg) ;
+    -moz-transform: scale(1) rotateY(0deg);
+    -ms-transform: scale(1) rotateY(0deg);
+    -o-transform: scale(1) rotateY(0deg);
+    transform: scale(1) rotateY(0deg);
+}
+.nav_sub_xla li a:hover{
+    height: 39px;
+    background: rgba(255, 255, 255, 1);
+    color:#22aaff;
+}
+nav .yemian:hover .nav_sub_xla b {
+    width: 100%;
+    height: 7px;
+    display: block;
+    background:rgba(255,255,255,1) url("../img2/index_z_92a888f.png") -198px -459px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+
+/*尾部说明*/
+
+footer{
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    color: #24611d;
+    padding: 30px 0 50px;
+}
+footer .wangzhan{
+    width: 493px;
+    margin: 0 auto;
+}
+.wangzhan li{
+    height: 20px;
+    display: inline-block;
+}
+.wangzhan li a{
+    color: #24611d;
+    font-size: 12px;
+    height: 20px;
+    padding: 0 10px;
+    line-height: 20px;
+    border-right: 1px solid #666666;
+}
+.wangzhan li:last-child a{
+    border-right: none;
+}
+.wangzhan li a:hover{
+    color: #c64c23;
+}
+.wangzhan2{
+    text-align: center;
+}
