@@ -1,1 +1,136 @@
-# WS
+
+header{
+    background: url(../img/bg_1.jpg)no-repeat;
+    background-size: 1380px;
+    padding-top: 293px;
+}
+/*详情界面的导航栏*/
+.mainbav{
+    border-radius: 30px;
+    height: 50px;
+    background: url(../img/bg_bgg.png)no-repeat -7px -15px;
+    background-size: 982px;
+    position: relative;
+}
+.mainbav_ul{
+    position: absolute;
+    top: 10px;
+    left: 140px;
+}
+.mainbav li{
+    width: 134px;
+    height: 35px;
+    display: inline-block;
+}
+.mainbav_ul .mainbav_li1:hover{
+    background:url(../img/bg_bgg.png)no-repeat -17px -74px;
+}
+.mainbav_ul .mainbav_li2:hover{
+    background:url(../img/bg_bgg.png)no-repeat -150px -74px;
+}
+.mainbav_ul .mainbav_li3:hover{
+    background:url(../img/bg_bgg.png)no-repeat -284px -74px;
+}
+.mainbav_ul .mainbav_li4:hover{
+    background:url(../img/bg_bgg.png)no-repeat -418px -74px;
+}
+.mainbav_ul .mainbav_li5:hover{
+    background:url(../img/bg_bgg.png)no-repeat -553px -74px;
+}
+.mainbav_ul li p{
+    width: 134px;
+    height: 35px;
+}
+
+
+/*详情界面的内容*/
+.container{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.container .container8t{
+    width: 74%;
+    height: 424px;
+}
+.container .container6t{
+    width: 74%;
+    height: 389px;
+}
+.container_biaoti{
+    width: 100%;
+    height: 71px;
+    background: url(../img/wz_bg.png)no-repeat;
+    background-size: 1434px;
+}
+.container_bt{
+    overflow: hidden;
+    padding-top: 18px;
+    padding-left: 35px;
+    color: #fffe57;
+}
+.container_bt li{
+    float: left;
+}
+.container_bt a{
+    color: #fffe57;
+}
+.container_bt a:hover{
+    color: #ff4031;
+}
+
+.container_neirong{
+    width: 100%;
+    height: 320px;
+    background: url(../img/wz_bg.png)no-repeat 0 -1100px;
+    background-size: 1434px 1800px;
+}
+.container_neirong_ul{
+    width: 655px;
+    padding: 10px 33px;
+    overflow: hidden;
+}
+.container_neirong_ul li{
+    overflow: hidden;
+    border-bottom: 1px dashed #666666;
+}
+.container_neirong_ul li a{
+    height: 30px;
+    line-height: 30px;
+    color: #46783e;
+    font-size: 14px;
+}
+.container_neirong_ul li p:nth-last-child(1){
+    width: 605px;
+    float: right;
+    padding-right: 20px;
+}
+.container_neirong_ul li .play2{
+    margin-top: 11px;
+    margin-left: 5px;
+    float: left;
+    width:0px;
+    height:0px;
+    border-left:6px solid #ff8b02;
+    border-top:4px solid rgba(255,255,255,0);
+    border-bottom:4px solid rgba(255,255,255,0);
+}
+.container_neirong_ul li a:hover{
+    color: #d9131d;
+}
+.container_neirong_ts{
+    margin-top: 20px;
+    text-align: center;
+}
+.neirong6t{
+    height: 280px;
+}
+.container_jiwei{
+    width: 100%;
+    height: 27px;
+    background: url(../img/wz_bg.png)no-repeat 0 -91px;
+    background-size: 1434px;
+}
+.container aside{
+    width: 25%;
+    height: 80px;
+}
