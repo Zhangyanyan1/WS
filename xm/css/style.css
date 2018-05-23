@@ -9,13 +9,13 @@ a{
     text-decoration: none;
 }
 body{
-    min-width: 1010px;
+    min-width: 1000px;
     background-color: #f3f3f3;
     font-family: "Î¢ÈíÑÅºÚ";
 }
 .center{
     margin: 0 auto;
-    width: 1010px;
+    width: 1000px;
 }
 header{
     overflow: hidden;
@@ -216,8 +216,8 @@ section.huodong_a li{
     margin-right: 4px;
 }
 section.huodong_a ul li a img{
-    width: 147px;
-    height: 147px;
+    width: 149px;
+    height: 149px;
 }
 section.huodong_b{
     width: 469px;
