@@ -213,7 +213,7 @@ section.huodong_a li:last-child{
 }
 section.huodong_a li{
     display: inline-block;
-    margin-right: 4px;
+    margin-right: 2px;
 }
 section.huodong_a ul li a img{
     width: 149px;
