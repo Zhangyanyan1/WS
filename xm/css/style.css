@@ -9,13 +9,13 @@ a{
     text-decoration: none;
 }
 body{
-    min-width: 1000px;
+    min-width: 1010px;
     background-color: #f3f3f3;
-    font-family: "΢���ź�";
+    font-family: "Î¢ÈíÑÅºÚ";
 }
 .center{
     margin: 0 auto;
-    width: 1000px;
+    width: 1010px;
 }
 header{
     overflow: hidden;
@@ -30,7 +30,7 @@ header .sousuo{
     width: 240px;
 }
 header .sousuo input[type="text"]{
-    font-family: "΢���ź�";
+    font-family: "Î¢ÈíÑÅºÚ";
     background-color: #f3f3f3;
     border: solid 1px #ccc;
     font-size: 20px;
@@ -40,7 +40,7 @@ header .sousuo input[type="text"]{
     line-height: 40px;
 }
 header .sousuo input[type="submit"]{
-    font-family: "΢���ź�";
+    font-family: "Î¢ÈíÑÅºÚ";
     background-color: #3598db;
     color: #fff;
     border: solid 1px #3598db;
