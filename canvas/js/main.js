@@ -1,8 +1,8 @@
 (function(document){
 	var cfg = {
 		canvas: document.getElementById('canvas'),
-		row: 18,
-		col: 18,
+		row: 12,
+		col: 12,
 		img: 80
 	};
 	function Game(config){
