@@ -1,1 +1,904 @@
-# WS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱奇艺-全球领先的在线视频网站-海量正版高清视频在线观看</title>
+    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script>
+        (function () {
+            var supportsOrientationChange = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+            var clientWidth = document.documentElement.clientWidth;
+            var timer;
+            function setRem() {
+                clientWidth = document.documentElement.clientWidth;
+                var nowPX = clientWidth / 100 * 10;
+                document.documentElement.style.fontSize = nowPX + 'px';
+            }
+            clientWidth !== 320 && setRem();
+            window.addEventListener(supportsOrientationChange, function () {
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    setRem();
+                }, 300);
+            }, false);
+        })();
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header_box">
+            <div class="m-user">
+                <!--logo-->
+                <a href="javascript:" class="logo">
+                    <img src="img/iqiyi-logo.png" alt=""/>
+                </a>
+                <div class="header-search">
+                    <!--搜索-->
+                    <div class="header_searcha">
+                        <a href="javascript:">
+                            <i class="icon iconfont">&#xe612;</i>
+                        </a>
+                    </div>
+                    <div class="searcha_box">
+                        <div class="searcha_input">
+                            <div class="searcha_border">
+                                <i class="icon iconfont">&#xe612;</i>
+                                <input class="searcha_text" type="text" name="text" placeholder="爱情公寓"/>
+                                <i class="iconc iconfont">&#xe636;</i>
+                            </div>
+                        </div>
+                        <div class="searcha_btn_box">
+                            <div class="searcha_btn">
+                                <a href="javascript:">取消</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--记录-->
+                    <div class="header_Record">
+                        <a href="javascript:">
+                            <i class="icon-Record iconfont">&#xe829;</i>
+                        </a>
+                    </div>
+                    <!--我的-->
+                    <div class="header_My">
+                        <a href="javascript:">我的</a>
+                    </div>
+                    <!--下载app-->
+                    <div class="header_app">
+                        <a href="javascript:">下载APP</a>
+                    </div>
+                </div>
+            </div>
+            <!--2级导航-->
+            <div class="sliding">
+                <div class="sliding-left">
+                    <div class="sliding-left-centent" id="wrapper">
+                        <ul class="left-centent-ul scroll">
+                            <li><a href="javascript:">精选</a></li>
+                            <li><a href="javascript:">VIP会员</a></li>
+                            <li><a href="javascript:">热点</a></li>
+                            <li><a href="javascript:">电视剧</a></li>
+                            <li><a href="javascript:">电影</a></li>
+                            <li><a href="javascript:">综艺</a></li>
+                            <li><a href="javascript:">动漫</a></li>
+                            <li><a href="javascript:">直播</a></li>
+                            <li><a href="javascript:">资讯</a></li>
+                            <li><a href="javascript:">娱乐</a></li>
+                            <li><a href="javascript:">原创</a></li>
+                            <li><a href="javascript:">搞笑</a></li>
+                            <li><a href="javascript:">健康</a></li>
+                            <li><a href="javascript:">生活</a></li>
+                            <li><a href="javascript:">母婴</a></li>
+                            <li><a href="javascript:">脱口秀</a></li>
+                            <li><a href="javascript:">军事</a></li>
+                            <li><a href="javascript:">片花</a></li>
+                            <li><a href="javascript:">旅游</a></li>
+                            <li><a href="javascript:">时尚</a></li>
+                            <li><a href="javascript:">教育</a></li>
+                            <li><a href="javascript:">财经</a></li>
+                            <li><a href="javascript:">音乐</a></li>
+                            <li><a href="javascript:">汽车</a></li>
+                            <li><a href="javascript:">纪录片</a></li>
+                            <li><a href="javascript:">体育</a></li>
+                            <li><a href="javascript:">儿童</a></li>
+                            <li><a href="javascript:">游戏</a></li>
+                            <li><a href="javascript:">科技</a></li>
+                            <li><a href="javascript:">网络电影</a></li>
+                            <li><a href="javascript:">拍客</a></li>
+                            <li><a href="javascript:">广告</a></li>
+                            <li><a href="javascript:">爱奇艺出品</a></li>
+                            <li><a href="javascript:">公益</a></li>
+                            <li><a href="javascript:">风云榜</a></li>
+                            <li><a href="javascript:">全网影视</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sliding-right">
+                    <div class="sliding-right-yy"></div>
+                    <div class="sliding-right-fh">
+                        <i class="iconfaxt iconfont">&#xe614;</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--头部结束-->
+        <!--搜索开始-->
+        <div class="m-search">
+            <div class="m-search-input">
+                <a href="javascript:" class="search-text">
+                    <i class="icax iconfont">&#xe612;</i>
+                    我们的少年时代
+                </a>
+            </div>
+        </div>
+        <div class="banner-box">
+            <div class="main_visual">
+                <div class="flicking_con">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                </div>
+                <div class="main_image">
+                    <ul>
+                        <li><a href="javascript:"><span class="img_3"><b>12集全</b></span></a></li>
+                        <li><a href="javascript:"><span class="img_4"><b>更新至12集</b></span></a></li>
+                        <li><a href="javascript:"><span class="img_1"><b>更新至14集</b></span></a></li>
+                        <li><a href="javascript:"><span class="img_2"><b>08-03期</b></span></a></li>
+                        <li><a href="javascript:"><span class="img_5"><b>08-03期</b></span></a></li>
+                    </ul>
+                    <a href="javascript:" id="btn_prev"></a>
+                    <a href="javascript:" id="btn_next"></a>
+                </div>
+            </div>
+            <div class="carousel-title">
+                <h3><a href="javascript:">鬼吹灯之牧野诡事：遭遇生死劫</a></h3>
+                <h3><a href="javascript:">河神：郭得友丁卯激斗魔古道</a></h3>
+                <h3><a href="javascript:">醉玲珑：卿尘醉酒缠元凌不撒手</a></h3>
+                <h3><a href="javascript:">大学生：李湘谈芒果台关系复杂</a></h3>
+                <h3><a href="javascript:">姐姐好饿：冯德伦婚戒示爱舒淇</a></h3>
+            </div>
+        </div>
+        <!-- 垂直产品 开始-->
+        <div class="m-box-items-full" id="wrappar">
+            <div class="m-box-items Scrozll">
+                <ul>
+                    <li><a href="javascript:"><img src="img/hy.png" alt=""/><span>会员俱乐部</span></a></li>
+                    <li><a href="javascript:"><img src="img/rd.png" alt=""/><span>热点</span></a></li>
+                    <li><a href="javascript:"><img src="img/yx.png" alt=""/><span>游戏中心</span></a></li>
+                    <li><a href="javascript:"><img src="img/suc.png" alt=""/><span>小说</span></a></li>
+                    <li><a href="javascript:"><img src="img/sc.png" alt=""/><span>商城</span></a></li>
+                    <li><a href="javascript:"><img src="img/dyp.png" alt=""/><span>电影票</span></a></li>
+                    <li><a href="javascript:"><img src="img/yysc.png" alt=""/><span>应用商店</span></a></li>
+                    <li><a href="javascript:"><img src="img/sdd.png" alt=""/><span>片单</span></a></li>
+                    <li><a href="javascript:"><img src="img/cd.png" alt=""/><span>更多</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Consultation_box">
+            <div class="m-box-items">
+                <div class="consu_title">
+                    <i></i>今日资讯
+                </div>
+            </div>
+            <div class="m-box-itexms">
+                <div class="m-news">
+                    <a href="javascript:">
+                        <i class="icax iconfont">&#xe61a;</i>
+                        一天6次!中方密集发声警告印度
+                    </a>
+                    <a href="javascript:">
+                        <i class="icax iconfont">&#xe61a;</i>
+                        东北4个省份局部发生洪涝灾害
+                    </a>
+                </div>
+            </div>
+            <div class="m-box-itemsc">
+                <div class="horizontal">
+                    <ul class="yc1">
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/001.jpg" alt=""/>
+                                <strong>刚刚发布</strong>
+                                <span>01:52</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    凌晨男子路边"吸"汽油
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/002.jpg" alt=""/>
+                                <strong>刚刚发布</strong>
+                                <span>02:38</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    大姐衣服反穿惊魂未定!
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/003.jpg" alt=""/>
+                                <strong>1小时前发布</strong>
+                                <span>01:55</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    熊孩子竟把牙齿放进耳朵
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/004.jpg" alt=""/>
+                                <strong>1小时前发布</strong>
+                                <span>01:23</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    6人面包车硬塞进26人
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="yc2">
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_113072263_m_601_m1_284_160.jpg" alt=""/>
+                                <strong>刚刚发布a</strong>
+                                <span>01:52</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    女婿公交上怒捅丈母娘
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_113063146_m_601_m1_284_160.jpg" alt=""/>
+                                <strong>刚刚发布</strong>
+                                <span>02:38</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    九寨沟游客亲历地震过程
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_113063146_m_601_m1_284_160.jpg" alt=""/>
+                                <strong>1小时前发布</strong>
+                                <span>01:55</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    男子带人群殴老婆领导
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_113063146_m_601_m1_284_160.jpg" alt=""/>
+                                <strong>1小时前发布</strong>
+                                <span>01:23</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    猕猴当服务员端茶倒水
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="m-linkMore_box">
+                        <a href="javascript:">更多资讯 <i class="iconcfaxt iconfont">&#xe60c;</i></a>
+                        <a href="javascript:" class="m-link">换一批<i class="iconfaxt iconfont">&#xe649;</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Consultation_box m-box">
+            <div class="m-box-items">
+                <div class="consu_title">
+                    <i></i>电视剧
+                </div>
+            </div>
+            <div class="m-boxsp-lb">
+                <div class="horizontal">
+                    <ul>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/011.jpg" alt=""/>
+                                <span>更新至40集</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    反恐特战队
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/012.jpg" alt=""/>
+                                <span>更新至16集</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    醉玲珑
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/013.jpg" alt=""/>
+                                <span>67集全</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    楚乔传
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/014.jpg" alt=""/>
+                                <span>更新至12集</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    河神
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/015.jpg" alt=""/>
+                                <span>42集全</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    我的前半生
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/011.jpg" alt=""/>
+                                <span>39集全</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    我们的少年时代
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="m-linkMore_box">
+                        <a href="javascript:">更多电视剧<i class="iconfaxt iconfont">&#xe60c;</i></a>
+                        <a href="javascript:" class="m-link">换一批<i class="iconfaxt iconfont">&#xe649;</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Consultation_box c-box">
+            <div class="m-box-items">
+                <div class="consu_title">
+                    <i></i>电影
+                </div>
+            </div>
+            <div class="m-boxsp-lb">
+                <div class="horizontal">
+                    <ul>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_dianying1.jpg" alt=""/>
+                                <i class="vip">VIP</i>
+                                <span>5.9</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">登机门</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_dianying2.jpg" alt=""/>
+                                <i class="vip">VIP</i>
+                                <span>7.3</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">我心雀跃</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_dianying3.jpg" alt=""/>
+                                <i class="vip">VIP</i>
+                                <span>7.4</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">明朝刺客</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_dianying4.jpg" alt=""/>
+                                <i class="vip">VIP</i>
+                                <span>7.2</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">冷血长官放开我</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_dianying5.jpg" alt=""/>
+                                <i class="vip">VIP</i>
+                                <span>7.2</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">腹黑少爷小冤家</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_dianying6.jpg" alt=""/>
+                                <i class="vip">VIP</i>
+                                <span>5.9</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">哆啦A梦</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="m-linkMore_box">
+                        <a href="javascript:">更多电影 <i class="iconfaxt iconfont">&#xe60c;</i></a>
+                        <a href="javascript:" class="m-link">换一批<i class="iconfaxt iconfont">&#xe649;</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Consultation_box d-box">
+            <div class="m-box-items">
+                <div class="consu_title">
+                    <i></i>综艺
+                </div>
+            </div>
+            <div class="m-boxsp-lb">
+                <div class="horizontal">
+                    <ul>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_d1.jpg" alt=""/>
+                                <i class="vip">自制</i>
+                                <span>08-07期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    笑霸来了
+                                </a>
+                                <a href="javascript:" class="zus">嘻哈内外火药升级</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_d2.jpg" alt=""/>
+                                <span>08-06期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    极限挑战第3季
+                                </a>
+                                <a href="javascript:" class="zus">第5期 孙红雷开挖小绵羊墙角</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_d3.jpg" alt=""/>
+                                <span>08-06期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    梨园春
+                                </a>
+                                <a href="javascript:" class="zus">卢静静高音破掉气场成衰人</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_d4.jpg" alt=""/>
+                                <span>08-06期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    音乐大师课第3季
+                                </a>
+                                <a href="javascript:" class="zus">谭维维扎西天籁之音RAP藏歌</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_d5.jpg" alt=""/>
+                                <span>08-07期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    非你莫属
+                                </a>
+                                <a href="javascript:" class="zus">痴情农村小伙现场表白</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_d6.jpg" alt=""/>
+                                <i class="vip">自制</i>
+                                <span>08-08期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    帕帕帮
+                                </a>
+                                <a href="javascript:" class="zus">Rap之神跨界拍电影</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="m-linkMore_box">
+                        <a href="javascript:">更多综艺 <i class="iconfaxt iconfont">&#xe60c;</i></a>
+                        <a href="javascript:" class="m-link">换一批<i class="iconfaxt iconfont">&#xe649;</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Consultation_box  c-box l-box">
+            <div class="m-box-items">
+                <div class="consu_title">
+                    <i></i>动漫
+                </div>
+            </div>
+            <div class="m-boxsp-lb">
+                <div class="horizontal">
+                    <ul>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/a_c1.jpg" alt=""/>
+
+                                <span>52集全</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    熊熊乐园
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/a_c2.jpg" alt=""/>
+                                <i class="vip">VIP</i>
+                                <span>更新至5集</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    捷德奥特曼
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/a_c3.jpg" alt=""/>
+                                <span>08-06期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    七人魔法使 剧场版
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/a_c4.jpg" alt=""/>
+                                <span>46集全</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    神兽金刚
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/a_c5.jpg" alt=""/>
+                                <span>更新至4集</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    NEW GAME! 第2季
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/a_c6.jpg" alt=""/>
+                                <i class="vip">自制</i>
+                                <span>20集全</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    海绵宝宝 第1季
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="m-linkMore_box">
+                        <a href="javascript:">更多动漫 <i class="iconfaxt iconfont">&#xe60c;</i></a>
+                        <a href="javascript:" class="m-link">换一批<i class="iconfaxt iconfont">&#xe649;</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Consultation_box  d-box x-box">
+            <div class="m-box-items">
+                <div class="consu_title">
+                    <i></i>娱乐
+                </div>
+            </div>
+            <div class="m-boxsp-lb">
+                <div class="horizontal">
+                    <ul>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_x1.jpg" alt=""/>
+                                <i class="vip">自制</i>
+                                <span>08-07期</span>
+                                <span class="fubrq">4小时前发布</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    X战警回归劳模姐加盟
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_x2.jpg" alt=""/>
+                                <span>08-06期</span>
+                                <span class="fubrq">15小时前发布</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    《战狼2》问鼎票房榜榜首
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_x3.jpg" alt=""/>
+                                <i class="vip">自制</i>
+                                <span>08-06期</span>
+                                <span class="fubrq">9小时前发布</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    电影《三生》海报抄袭道歉
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_x4.jpg" alt=""/>
+                                <span>08-06期</span>
+                                <span class="fubrq">1小时前发布</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    林更新被网友晒“黑照”
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="m-linkMore_box">
+                        <a href="javascript:">更多娱乐 <i class="iconfaxt iconfont">&#xe60c;</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Consultation_box  d-box o-box">
+            <div class="m-box-items">
+                <div class="consu_title">
+                    <i></i>原创
+                </div>
+            </div>
+            <div class="m-boxsp-lb">
+                <div class="horizontal">
+                    <ul>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_o1.jpg" alt=""/>
+                                <span>08-03期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    神奇！巨蟒渡劫大揭密
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_o2.jpg" alt=""/>
+                                <span>08-06期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    碰瓷大爷 这回亏大了
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_o3.jpg" alt=""/>
+                                <i class="vip">独播</i>
+                                <span>08-07期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    收到女友礼物该如何反应
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_o4.jpg" alt=""/>
+                                <span>08-10期</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    女神迪丽热巴也曾非主流
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="m-linkMore_box">
+                        <a href="javascript:">更多原创 <i class="iconfaxt iconfont">&#xe60c;</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Consultation_box  d-box p-box">
+            <div class="m-box-items">
+                <div class="consu_title">
+                    <i></i>头条热榜
+                </div>
+            </div>
+            <div class="m-boxsp-lb">
+                <div class="horizontal">
+                    <ul>
+                        <li class="one">
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/h_p1.jpg" alt=""/>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    孕妇手术麻醉后感觉不舒服，查看监控后崩溃大哭
+                                    <strong>芥末滚滚</strong>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    三名男子救活了死去的女孩，真实原因让人愤怒
+                                    <span>喵妹说电影</span>
+                                </a>
+                            </div>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_p1.jpg" alt=""/>
+                            </a>
+                        </li>
+                        <li class='tow' style="border:0 none">
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    新郎的前女友挺大肚和母亲大闹婚礼，新娘这处理方式让人拍手叫好
+                                    <span>四川地方站</span>
+                                </a>
+                            </div>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_p2.jpg" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Consultation_box  d-box j-box">
+            <div class="m-box-items">
+                <div class="consu_title">
+                    <i></i>健康
+                </div>
+            </div>
+            <div class="m-boxsp-lb">
+                <div class="horizontal">
+                    <ul>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_j1.jpg" alt=""/>
+                                <span>01:58</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    男子铁钉藏鼻致眼流脓
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="img_Btn">
+                                <img src="img/v_j2.jpg" alt=""/>
+                                <span>01:01</span>
+                            </a>
+                            <div class="horzon_title">
+                                <a href="javascript:">
+                                    9岁女孩怀孕并产下男婴
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="m-linkMore_box">
+                        <a href="javascript:">更多健康 <i class="iconfaxt iconfont">&#xe60c;</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-linkMore">
+            <a href="javascript:">
+                <i class="icon iconfont">&#xe603;</i>
+                意见反馈
+            </a>
+        </div>
+        <!-- 页底 -->
+        <div class='footer'>
+            <img src="img/foot.png" alt=""/>
+        </div>
+        <!--顶部-->
+        <div class="fixed">
+            <a href="javascript:">
+                <i class="icon iconfont">&#xe721;</i>
+                顶部
+            </a>
+        </div>
+        <!--遮罩层-->
+        <div class="mask">
+            <div class="btn">
+                <a href="javascript:" class="App_bf">客户端观看</a>
+                <a href="javascript:" class="mask_tguo">跳过</a>
+            </div>
+        </div>
+        <!--搜索内容-->
+        <div class="searcax">
+            <div class="searcax_centent">
+                <h4>热门搜索</h4>
+                <ul>
+                    <li><a href="javascript:">网红魅影</a></li>
+                    <li><a href="javascript:">我的前半生</a></li>
+                    <li><a href="javascript:">爱情公寓</a></li>
+                    <li><a href="javascript:">我们的少年时代</a></li>
+                    <li><a href="javascript:">鬼吹灯之牧野诡事</a></li>
+                    <li><a href="javascript:">三生三世十里桃花</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/style.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/jquery.event.drag-1.5.min.js"></script>
+    <script src="js/jquery.touchSlider.js"></script>
+    <script>
+        var Scroll = new iScroll('wrapper',{hScroll:true,vScroll:false,hScrollbar:false, vScrollbar:false});
+        var Scrozll = new iScroll('wrappar',{hScroll:true,vScroll:false,hScrollbar:false, vScrollbar:false});
+    </script>
+</body>
+</html>
