@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/rush.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="center">
+            <div class="back"><a href="index.html" class="zpa1">返回</a></div>
+            <div class="header-c">一起来闯关</div>
+        </div>
+    </div>
+    <div class="nav_look">
+        <div id="look_divgs" class="look_divgs">
+            <div class="total_score_div ovf">
+                <p class="total_score">9879</p>
+                <p class="float-r"><img src="img/topic.png" alt=""/></p>
+            </div>
+            <ul class="look_ulgs ovf">
+                <li onclick="newList(0)"><a href="#look_div"><p>Level 1</p></a></li>
+                <li onclick="newList(1)"><a href="#look_div"><p>Level 2</p></a></li>
+                <li onclick="newList(2)"><a href="#look_div"><p>Level 3</p></a></li>
+                <li onclick="newList(3)"><a href="#look_div"><p>Level 4</p></a></li>
+                <li onclick="newList(4)"><a href="#look_div"><p>Level 5</p></a></li>
+                <li onclick="newList(5)"><a href="#look_div"><p>Level 6</p></a></li>
+            </ul>
+        </div>
+        <div id="look_div" class="look_div look_condiv">
+            <div class="look_con">
+                <div class="guanka">
+                    <h2>第<span class="alternant">1</span>关</h2>
+                    <div class="look_act_div">
+                        <p onclick="tuichu()"><a href="#look_divgs">退出</a></p>
+                        <p class="looktt">0</p>
+                        <div class="progress"><p class="progress_nei"></p></div>
+                    </div>
+                </div>
+                <ul class="rush_ul">
+                </ul>
+            </div>
+        </div>
+        <div class="look_div look_divcg">
+            <div class="look_concj">
+                <ul class="canvas_cjdiv_pass">
+                    <li><p>恭喜您通关!</p></li>
+                    <li><p onclick="rushNext();">下一关</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="look_div look_divbj">
+            <div class="look_concj">
+                <ul class="canvas_cjdiv_ul">
+                    <li><h2>你的本次成绩为：</h2></li>
+                    <li><h1><span class="rush_cjdiv_zcj">0</span>分</h1></li>
+                    <li><h4>好棒！加油再挑战更高的成绩吧！</h4></li>
+                    <li><h4>还可以参加游戏高手排行，看看谁更厉害！</h4></li>
+                    <li><p onclick="lookJixu();"><a href="#jiazai">重新开始</a></p><p onclick="fanhui()"><a href="#look_divgs">退出</a></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/rushlist.js"></script>
+</body>
+</html>
+<!--"topiclist": 0,//pk总得分-->
+<!--"topictext": 0,//pk每次比赛得分-->
+<!--"lucklist": 0,//连连看得分-->
+<!--"looklist": 0,//找茬得分-->
+<!--"rushlist": 0   //一起来闯关得分-->

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/look.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="center">
+            <div class="back" onclick="tiuchu();"><a href="index.html" class="zpa1">返回</a></div>
+            <div class="header-c">一起来找茬</div>
+        </div>
+    </div>
+    <div class="nav_look">
+        <div id="look_divgs" class="look_divgs">
+            <div class="total_score_div ovf">
+                <p class="total_score">9879</p>
+                <p class="float-r"><img src="img/topic.png" alt=""/></p>
+            </div>
+            <ul class="look_ulgs">
+            </ul>
+        </div>
+        <div id="look_div" class="look_div look_condiv">
+            <div class="look_con">
+                <div class="guanka">
+                    <h2>第<span class="alternant">1</span>关</h2>
+                    <div class="look_act_div">
+                        <p onclick="tiuchu();"><a href="#look_divgs">退出</a></p>
+                        <p class="looktt">0</p>
+                        <div class="progress"><p class="progress_nei"></p></div>
+                    </div>
+                </div>
+                <ul class="look_topic ovf">
+                    <li class="float-l">原文</li>
+                    <li class="float-r">修改文</li>
+                </ul>
+                <ul class="look_con_ul ovf">
+                </ul>
+                <div class="guankafen ovf">
+                    <p class="float-r"><span class="textSeveral">0</span>/<span>5</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="look_div look_divcg">
+             <div class="look_concj">
+                 <ul class="canvas_cjdiv_pass">
+                     <li><p>恭喜您通关!</p></li>
+                     <li><p onclick="lookNext();">下一关</p></li>
+                 </ul>
+             </div>
+        </div>
+        <div class="look_div look_divbj">
+             <div class="look_concj">
+                 <ul class="canvas_cjdiv_ul">
+                     <li><h2>你的本次成绩为：</h2></li>
+                     <li><h1><span class="look_cjdiv_zcj">0</span>分</h1></li>
+                     <li><h4>好棒！加油再挑战更高的成绩吧！</h4></li>
+                     <li><h4>还可以参加游戏高手排行，看看谁更厉害！</h4></li>
+                     <li><p onclick="lookJixu();"><a>重新开始</a></p><p onclick="lookTiuchu();"><a href="#look_divgs">返回</a></p></li>
+                 </ul>
+             </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/looklist.js"></script>
+</body>
+</html>

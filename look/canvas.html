@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/canvas.css"/>
+</head>
+<body class="body_canvas">
+    <div class="header">
+        <div class="center">
+            <div class="back backll"><a href="index.html" class="zpa1">返回</a></div>
+            <div class="header-c">连连看</div>
+        </div>
+    </div>
+    <div id="guandiv" class="nav_canvas">
+         <div class="total_score_div ovf">
+             <p class="total_score">9879</p>
+             <p class="float-r"><img src="img/topic.png" alt=""/></p>
+         </div>
+         <ul class="canvas_ul">
+             <!--<li onclick="subjectList(1);"><a href="#canvas_act"><p>1</p></a></li>-->
+             <!--<li onclick="subjectList(2);"><a href="#canvas_act"><p>2</p></a></li>-->
+             <!--<li onclick="subjectList(3);"><a href="#canvas_act"><p>3</p></a></li>-->
+             <!--<li onclick="subjectList(4);"><a href="#canvas_act"><p>4</p></a></li>-->
+         </ul>
+    </div>
+    <div class="nav_start">
+        <div id="jiazai" class="jiazai">
+            <div id="canvas_act" class="nav_canvas_act">
+                <div class="con">
+                    <div class="guanka">
+                        <h2>第<span class="alternant">1</span>关</h2>
+                        <div class="canvas_act_div">
+                            <p onclick="refurbish();">重玩本关</p>
+                            <p class="canvastt">0</p>
+                            <div class="progress"><p class="progress_nei"></p></div>
+                        </div>
+                    </div>
+                    <ul class="canvas_act_ul"></ul>
+                    <div class="guankafen">
+                        <p onclick="canvasTuichu();"><a href="#guandiv">退出本关</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="canvas_cjdiv" class="canvas_cjdiv">
+            <div class="canvas_cjdiv_div">
+                <ul class="canvas_cjdiv_ul">
+                    <li><h2>你的本关成绩为：</h2></li>
+                    <li><h1><span class="canvas_cjdiv_zcj">0</span>分</h1></li>
+                    <li><h4>好棒！加油再挑战更高的成绩吧！</h4></li>
+                    <li><h4>还可以参加游戏高手排行，看看谁更厉害！</h4></li>
+                    <li><p onclick="canvasNext();">重新开始</p><p onclick="canvasTuichu();"><a href="#guandiv">退出</a></p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="canvas_tgdiv">
+            <div class="canvas_concj">
+                <ul class="canvas_cjdiv_pass">
+                    <li><p>恭喜您通关!</p></li>
+                    <li><p onclick="canvasJixu();">下一关</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/topicpk.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/move.js"></script>
+    <script type="text/javascript" src="js/canvasact.js"></script>
+</body>
+</html>

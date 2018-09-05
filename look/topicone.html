@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="center">
+            <div class="back"><a href="index.html" class="zpa1">返回</a></div>
+            <div class="header-c">习题PK</div>
+        </div>
+    </div>
+    <div class="navpk">
+        <ul class="zp">
+            <li id="zpname" class="pkname"></li>
+            <li onclick=""><a href="topiconepk.html"><p>新手原木</p></a></li>
+            <li><a href="#"><p>坚韧黑铁</p></a></li>
+        </ul>
+    </div>
+    <script src="js/topicpk.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        var zpname = document.getElementById('zpname');
+        var getJson = 'data.json';
+        levelData();
+        //等级页
+        function levelData(){
+            $.ajax({
+                type:"get",
+                url: getJson,
+                data: {},
+                dataType: 'json',
+                success: function(data){
+                    OhomePage(data,0);
+                },
+                error: function(data){
+
+                }
+            });
+        }
+        function OhomePage(obj,n){
+            var songArr = obj.song_list;
+            var str ='<li id="zpname" class="pkname">';
+            str +='<div class="zp_div">';
+            str += '<p><img src="'+songArr[n].img+'"></p>';
+            str += '<h4>'+songArr[n].name+'</h4>';
+            str += '</div>';
+            str += '</li>';
+            for(var i = 0; i < 6; i++){
+                str +='<li onclick="levelList();"><a href="#nav_one"><p>新手原木</p></a></li>';
+            }
+            //str +='<li onclick=""><a href="#nav_one"><p>新手原木</p></a></li>';
+            //str +='<li><a href="#nav_one"><p>坚韧黑铁</p></a></li>';
+            zp.innerHTML += str;
+        }
+
+    </script>
+</body>
+</html>
