@@ -1,0 +1,256 @@
+.nav_canvas{
+    overflow-y: hidden;
+}
+.total_score_div{
+    width: 90%;
+    margin: 65px auto 25px;
+}
+.total_score{
+    color: #04f5f9;
+    float: right;
+    width: 120px;
+    height: 28px;
+    border-radius: 10px;
+    line-height: 28px;
+    font-size: 22px;
+    padding: 0 10px;
+    background-color: #f9a37e;
+    border: 3px solid #fff;
+}
+.canvas_ul{
+    margin: 0 auto;
+    width: 320px;
+}
+.canvas_ul li{
+    width: 65px;
+    height: 58px;
+    display: inline-block;
+    margin: 0 6px 20px 8px;
+}
+.canvas_ul li a p{
+    width: 65px;
+    height: 58px;
+    color: #fff;
+    text-align: center;
+    line-height: 58px;
+    font-size: 20px;
+    background: url("../img/level.png") no-repeat;
+    background-size: 65px 58px;
+}
+
+
+
+
+.nav_start{
+    position: relative;
+    display: none;
+}
+
+/*做题页面*/
+.nav_canvas_act{
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/lookbei.png") no-repeat;
+    background-size: 100% 100%;
+}
+.con{
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.guanka{
+    text-align: center;
+    color: #05fbfe;
+}
+.canvas_act_div{
+    width: 80%;
+    height: 30px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.progress{
+    float: right;
+    width: 140px;
+    height: 7px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.progress>p{
+    width: 140px;
+    height: 7px;
+    border-radius: 5px;
+    background: url("../img/canvasjdt.png")no-repeat;
+    background-size: 140px 100%;
+}
+.canvas_act_div>p:nth-child(1){
+    float: left;
+    background-color: #668092;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.canvas_act_div>p:nth-child(2){
+    float: right;
+    width: 60px;
+    height: 30px;
+    color: #67ff99;
+    line-height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+
+
+/*加载题*/
+.canvas_act_ul{
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border: 1px solid #848484;
+}
+.canvas_act_ul li{
+    width: 98px;
+    height: 98px;
+    position: absolute;
+    border: 1px solid #99f;
+}
+.canvas_act_ul li p{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 5%;
+    font-size: 16px;
+    color: #507381;
+    border: 1px solid #9193d2;
+    background-color: #bbcdff;
+}
+.guankafen{
+    width: 70%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.guankafen p:nth-child(1) a{
+    float: right;
+    text-align: center;
+    background-color: #668092;
+    color: #fff;
+    margin: 6px 0;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+/*结束成绩*/
+.canvas_cjdiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+.canvas_cjdiv_div{
+    padding: 210px 11vw 0 11vw;
+}
+.canvas_cjdiv_ul{
+    color: #34ffe2;
+    padding: 20px 3vw;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+.canvas_cjdiv_ul li:nth-child(2) span{
+    color: #ff1070;
+}
+.canvas_cjdiv_ul li:nth-child(5){
+    width: 80%;
+    margin: 20px auto 0;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+.canvas_cjdiv_ul li:nth-child(5) p:nth-child(1){
+    float: left;
+    width: 80px;
+    height: 35px;
+    color: #fff;
+    line-height: 35px;
+    border-radius: 10px;
+    background-color: #143370;
+}
+.canvas_cjdiv_ul li:nth-child(5) p:nth-child(2) a{
+    float: right;
+    width: 80px;
+    height: 35px;
+    color: #fff;
+    line-height: 35px;
+    border-radius: 10px;
+    background-color: #143370;
+}
+
+
+
+
+.canvas_tgdiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+/*通关*/
+.canvas_cjdiv_pass{
+    width: 280px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    margin: 190px auto 0;
+    text-align: center;
+    padding-top: 40px;
+}
+.canvas_cjdiv_pass li:nth-child(1){
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 23px;
+    background: rgba(225, 225, 225, 0.8);
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border: 5px solid #b285e8;
+    color: #824961;
+}
+.canvas_cjdiv_pass li:nth-child(2){
+    width: 126px;
+    height: 47px;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: #464646;
+    border: 2px solid #fff;
+    border-radius: 32px;
+    margin: 20px auto 0;
+    padding: 3px 3px 2px;
+    text-align: center;
+    color: #1f4e82;
+}
+.canvas_cjdiv_pass li:nth-child(2) p{
+    width: 120px;
+    height: 40px;
+    background: url("../img/lookan.png")no-repeat;
+    background-size: 100% 100%;
+    border-radius: 26px;
+    border: 3px solid #6bb6f9;
+}

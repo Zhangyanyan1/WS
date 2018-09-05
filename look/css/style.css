@@ -1,0 +1,142 @@
+/*初始化代码*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+    -webkit-overflow-scrolling: touch;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    color: #525258;
+    text-decoration: none;
+}
+input{
+    /*设置背景颜色为透明色*/
+    background-color: transparent;
+    border: none;
+    /*去掉轮廓*/
+    outline: none;
+}
+/*公共样式*/
+html{
+    height: 100%;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+body{
+    height: 100%;
+    background-color: #307fe3;
+    /*background-color: #c7a0ff;*/
+    /*background-color: #a300dd;*/
+    /*overflow-x: hidden;*/
+    font-family:"微软雅黑","华文细黑",Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#fff;
+    user-select:none;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust: none;
+}
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+.ovf{
+    overflow: hidden;
+}
+.center{
+    width: 90%;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    background-color: #7eaddd;
+    /*background-color: #a300dd;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /*容器阴影*/
+    box-shadow: 0 1px 10px 0 #7eaddd;
+    /*box-shadow: 0 1px 10px 0 #a300dd;*/
+    /*box-shadow: 0 1px 10px 0 #948fab;*/
+}
+.header a{
+    color: #fff;
+}
+.back{
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+
+
+.navin{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.zplogo{
+    margin: 21% auto;
+    width: 75%;
+    height: 80px;
+}
+.zplogo li{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 40px;
+    background-color: #82addd;
+    border-radius: 5px;
+}
+.zplogo li a p{
+    width: 97%;
+    height: 80px;
+    margin-left: 1.5%;
+}
+.zplogo li:nth-child(1) p{
+    background: url("../img/pklogo.png")no-repeat -2px 0;
+    background-size: 102% 100%;
+}
+.zplogo li:nth-child(2) a p:nth-child(1){
+    background: url("../img/canvaslogo.png")no-repeat -2px 0;
+    background-size: 102% 100%;
+}
+.zplogo li:nth-child(2) a p:nth-child(2){
+    width: 70px;
+    height: 35px;
+    background: url("../img/canvasqq.png")no-repeat;
+    background-size: 70px 35px;
+    margin-left: -40px;
+    margin-top: -55px;
+}
+.zplogo li:nth-child(3) p{
+    background: url("../img/looklogo.png")no-repeat -2px 0;
+    background-size: 102% 100%;
+}
+.zplogo li:nth-child(4) a p:nth-child(1){
+    background: url("../img/rushlogo.png")no-repeat -2px 0;
+    background-size: 102% 100%;
+}
+.zplogo li:nth-child(4) p:nth-child(2){
+    width: 125px;
+    height: 130px;
+    background: url("../img/rushqq.png")no-repeat -2px 0;
+    background-size: 110px 128px;
+    margin-top: -100px;
+    margin-left: -35px;
+}
