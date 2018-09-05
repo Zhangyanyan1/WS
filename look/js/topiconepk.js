@@ -149,11 +149,12 @@ function topicInterval(data){
     dijiguan=0;
     tishu=[];
     tisShu();
+    var songArr=data.song_list;
     var str ='<li id="one_diva" class="one_li">';
     str += '<p class="yil"></p>';
     str += '<p class="one_divl"><img class="one_imgl" src="img/bb.jpg" alt=""/></p>';
     //str += '<span id="one_spana" class="one_span">'+self_nickname+'</span>';
-    str += '<span id="one_spana" class="one_span">look曙光</span>';
+    str += '<span id="one_spana" class="one_span">'+songArr[0].name+'</span>';
     str += ' </li>';
     str += '<li>';
     str += ' <p><img src="img/vs.png"/></p>';
