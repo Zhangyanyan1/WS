@@ -208,7 +208,7 @@ function OhomePagePp(){
      $(".one_score_ul li").css({backgroundColor:'#999'});
      move(one_score_ul,'opacity',100);
      dianji=true;
-     one_score_ul.innerHTML = '';
+     //one_score_ul.innerHTML = '';
      $.ajax({
          type: "post",
          url: getJson,
