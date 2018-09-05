@@ -84,9 +84,9 @@ levelData();
 function levelData(){
     $.ajax({
         type:"get",
-        url: getIndex,
+        url: getJson,
         data: {
-            uid:2
+            //uid:2
         },
         dataType: 'json',
         success: function(data){
@@ -99,20 +99,24 @@ function levelData(){
     });
 }
 function OhomePage(obj){
-    var songArr = obj.retinfo;
+    //var songArr = obj.retinfo;
     var str ='<li id="zpname" class="pkname">';
         str +='<div class="zp_div">';
         str += '<p><img src="img/bb.jpg"></p>';
         //str += '<h3>'+songArr.nickname+'</h3>';
         str += '<h3>look曙光</h3>';
-        str += '<h4>'+songArr.score+'</h4>';
+        //str += '<h4>'+songArr.score+'</h4>';
+        str += '<h4>33333</h4>';
         str += '</div>';
         str += '</li>';
-    for(var i = 0; i < songArr.data.length; i++){
-        str +='<li onclick="subjectListPp('+i+');"><a href="#nav_one"><p>'+songArr.data[i].title+'</p></a></li>';
+    //for(var i = 0; i < songArr.data.length; i++){
+    for(var i = 0; i < 8; i++){
+        //str +='<li onclick="subjectListPp('+i+');"><a href="#nav_one"><p>'+songArr.data[i].title+'</p></a></li>';
+        str +='<li onclick="subjectListPp('+i+');"><a href="#nav_one"><p>等级'+(i+1)+'</p></a></li>';
     }
     zp.innerHTML += str;
-    self_nickname = songArr.nickname;
+    //self_nickname = songArr.nickname;
+    //self_nickname = songArr.nickname;
     self_headimg = '';
 }
 
@@ -126,10 +130,10 @@ function subjectListPp(z){
     $(".one_spana").innerHTML="ccc";
     $.ajax({
         type:"get",
-        url: getIndexPp,
+        url: getJson,
         data: {
-            uid:2,
-            type:2
+            //uid:2,
+            //type:2
         },
         dataType: 'json',
         success: function(data){
@@ -167,9 +171,10 @@ function topicInterval(data){
     one_spanb = document.getElementById('one_spanb');
     //var tom=true;
     time=setInterval(function(){
-        var songArr=data.retinfo;
+        //var songArr=data.retinfo;
         //if(data.retval ==="OK"){
-            OhomePagePp(songArr);
+        //    OhomePagePp(songArr);
+            OhomePagePp();
             time2=setInterval(function(){
                 window.location.href="#navpk";
                 subjectList(tishu[dijiguan]);
@@ -180,11 +185,12 @@ function topicInterval(data){
     },1000);
 
 }
-function OhomePagePp(obj){
-    one_spanb.innerHTML=obj.nickname;
+function OhomePagePp(){
+    //one_spanb.innerHTML=obj.nickname;
+    one_spanb.innerHTML="look曙光";
     //one_imgr.item(0).src=obj.headimg;
     one_imgr.item(0).src="img/cc.jpg";
-    target_nickname = obj.nickname;
+    //target_nickname = obj.nickname;
     target_headimg = '';
     one_p.item(0).src='img/match.png';
     $(".one_p").css({width: 120,height: 60});
